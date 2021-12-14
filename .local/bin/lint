@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+
+builtin source "${BASH_SOURCE[0]%/*}"/../lib/init.sh
+
+main() {
+	local json nerr=0
+
+	while read -r json; do
+		echo "Validating $json" >&2
+		printf "\t" >&2
+		python -mjson.tool "$json" >/dev/null || ((++nerr))
+		echo >&2
+	done < <(find . -type f -and -not -path './.git/*' -and -name '*.json')
+
+	if [[ $nerr -gt 0 ]]; then
+		echo "JSON validation errors found." >&2
+		exit 1
+	fi
+}
+
+main "$@"
