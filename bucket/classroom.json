@@ -2,7 +2,7 @@
   "homepage": "https://classroom.omu.sh",
   "description": "Classroom files",
   "license": "Proprietary, GPL-3.0-or-later",
-  "version": "202112110000",
+  "version": "202112150000",
   "url": [
     "https://cloud-images.ubuntu.com/jammy/current/jammy-server-cloudimg-amd64-wsl.rootfs.tar.gz#/wslimage",
     "https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi#/wslkernel.7z",
@@ -12,7 +12,7 @@
   "hash": [
     "",
     "4d09c776c8d45f70a202281d18e19be1118f53159b0c217a5274a31ce18525fe",
-    "e1cb5aa8778d397a8e89318402d8d982510f01b3ee594e72e25ea05d2d0e928f",
+    "686ec94b0186d489059af7ecd698b96dde3f7e5e46d35a699e17c771d30d3c69",
     "14c542693d575c77b1b7ede7477c2d75235b67edecd46546c2ef39a8ad74baad"
   ],
   "post_install": [
